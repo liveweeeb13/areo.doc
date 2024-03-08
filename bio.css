@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+    overflow-x: hidden;
+}
+
+.nav-links {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: right 0.3s ease;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin-bottom: 10px;
+}
+
+.nav-links ul li a {
+    color: #0099ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #55aaff;
+}
+
+#page-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: rgba(0, 153, 255, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#page-btn:hover {
+    background-color: rgba(85, 170, 255, 0.8);
+}
+
+a {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #55aaff;
+}
+
+.nav-links ul li a {
+    color: #0099ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.nav-links ul li a:hover {
+    color: #55aaff;
+}
+
+
+.content {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 38px;
+    color: #0099ff; 
+    margin-bottom: 10px; 
+}
+
+.content p {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; 
+}
+
+
+
+.content  img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    margin-top: 25px;
+}
+
+.content img:hover {
+    transform: scale(1.1); 
+}
+
+.content p:hover {
+      transform: scale(1.01); 
+}
+
+.content code {
+    background-color: #333;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+  }
+  
+  @media only screen and (max-width: 728px) {
+    .nav-links {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+
+    #page-btn {
+        padding: 8px 16px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content img {
+        max-width: 300px;
+    }
+}
